@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="light" lang="uk"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&amp;family=Lora:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "sky-blue": "#E0F2FE",
+              "warm-peach": "#FFEDD5",
+              "mint-cream": "#F0FDF4",
+              "lavender": "#F5F3FF",
+              "soft-rose": "#FFF1F2",
+              "brand-primary": "#FB923C",
+              "brand-secondary": "#38BDF8",
+              "text-main": "#334155",
+              "text-light": "#64748B"
+            },
+            borderRadius: {
+              "blob": "30% 70% 70% 30% / 30% 30% 70% 70%",
+              "super-xl": "3rem"
+            },
+            fontFamily: {
+              headline: ["Fredoka", "sans-serif"],
+              body: ["Lora", "serif"],
+            }
+          },
+        },
+      }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body { @apply bg-white text-text-main font-body selection:bg-brand-primary/30; }
+            h1, h2, h3, h4 { @apply font-headline font-bold; }
+        }
+        .collage-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .hand-drawn-border {
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            border: 2px solid currentColor;
+        }
+        .waveform-segment {
+            transition: height 0.2s ease;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<nav class="sticky top-4 mx-4 md:mx-12 z-[100] bg-white/80 backdrop-blur-md rounded-full border-2 border-brand-primary/20 p-2 px-6 shadow-xl flex justify-between items-center">
+<a class="text-3xl font-headline font-black text-brand-primary tracking-tight" href="#">MOBIDICK</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline font-semibold text-text-main hover:text-brand-primary transition-colors" href="#">Умови</a>
+<a class="font-headline font-semibold text-text-main hover:text-brand-primary transition-colors" href="#">Вакансії</a>
+<a class="font-headline font-semibold text-text-main hover:text-brand-primary transition-colors" href="#">Контакти</a>
+<a class="font-headline font-semibold text-text-main hover:text-brand-primary transition-colors" href="#">FAQ</a>
+</div>
+<button class="bg-brand-primary text-white px-6 py-2.5 rounded-full font-headline font-bold hover:rotate-2 hover:scale-105 transition-all shadow-lg">Зв'язатися</button>
+</nav>
+<main>
+<section class="relative pt-24 pb-32 px-6 md:px-12 overflow-hidden">
+<div class="absolute top-0 right-[-10%] w-[500px] h-[500px] bg-warm-peach rounded-blob opacity-50 -z-10 animate-pulse"></div>
+<div class="absolute bottom-10 left-[-5%] w-[400px] h-[400px] bg-sky-blue rounded-blob opacity-40 -z-10"></div>
+<div class="max-w-7xl mx-auto collage-container items-center">
+<div class="col-span-12 lg:col-span-7 relative">
+<h1 class="text-5xl md:text-7xl lg:text-8xl leading-tight mb-8 text-text-main relative">
+                    Ваш шлях до роботи в <span class="text-brand-secondary underline decoration-wavy decoration-brand-primary/40">Чехії</span> починається тут
+                    <span class="absolute -top-10 -left-10 text-6xl opacity-20 rotate-12">🇨🇿</span>
+</h1>
+<div class="flex items-center gap-6">
+<button class="bg-brand-secondary text-white px-10 py-5 rounded-full font-headline font-bold text-xl hover:shadow-[8px_8px_0px_rgba(56,189,248,0.3)] transition-all">Зв'язатися</button>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-5 relative mt-12 lg:mt-0">
+<div class="relative w-full aspect-square max-w-md mx-auto">
+<img alt="Whimsical illustration of Czech map" class="w-full h-full object-contain drop-shadow-2xl hover:-rotate-3 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3JKK2acPQZVnk3EopmqJGpwnvdJvwmBDCZEbqePyxM9-uvd-HP-CVK4zbf9IhdzM6CFADdCjnOGXVlZAV8rWQGWT5VSuu0Xd6Mgu4cu6ieqSxpfIpf4cX0NYJvC_wXsnzmcQ4dA5fW89Op2qTBxW9w8uXrqtC0BI3PSGje5a2vrB3CPi3eBrz68sU6qVBaYC1XNw6ErRMn4bkBj8OI0NM9QocXZbO6vn-qJo2C5W_pfJzPCJtDtE2Yx7NmSqoKH9ZiFtoyJXyeBU"/>
+<div class="absolute -top-10 right-0 w-32 h-32 bg-mint-cream hand-drawn-border flex items-center justify-center rotate-6 shadow-lg p-2">
+<img class="rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3JKK2acPQZVnk3EopmqJGpwnvdJvwmBDCZEbqePyxM9-uvd-HP-CVK4zbf9IhdzM6CFADdCjnOGXVlZAV8rWQGWT5VSuu0Xd6Mgu4cu6ieqSxpfIpf4cX0NYJvC_wXsnzmcQ4dA5fW89Op2qTBxW9w8uXrqtC0BI3PSGje5a2vrB3CPi3eBrz68sU6qVBaYC1XNw6ErRMn4bkBj8OI0NM9QocXZbO6vn-qJo2C5W_pfJzPCJtDtE2Yx7NmSqoKH9ZiFtoyJXyeBU"/>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-8 hand-drawn-border border-sky-blue text-center -rotate-1 hover:rotate-0 transition-all shadow-sm">
+<div class="text-5xl font-headline font-black text-brand-secondary mb-2">10+ років</div>
+<div class="text-text-light font-medium italic">Досвіду на ринку</div>
+</div>
+<div class="bg-white p-8 hand-drawn-border border-warm-peach text-center rotate-2 hover:rotate-0 transition-all shadow-sm translate-y-4">
+<div class="text-5xl font-headline font-black text-brand-primary mb-2">400+ людей</div>
+<div class="text-text-light font-medium italic">Успішно працевлаштовано</div>
+</div>
+<div class="bg-white p-8 hand-drawn-border border-mint-cream text-center -rotate-2 hover:rotate-0 transition-all shadow-sm">
+<div class="text-5xl font-headline font-black text-brand-secondary mb-2">20+ фірм</div>
+<div class="text-text-light font-medium italic">Прямих роботодавців</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 md:px-12 bg-mint-cream/50 relative overflow-hidden">
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="mb-20 text-center">
+<h2 class="text-5xl md:text-6xl mb-6">Переваги з <span class="text-brand-primary">MOBIDICK</span></h2>
+<p class="text-xl text-text-light max-w-2xl mx-auto">Ми подбаємо про кожну дрібницю вашої подорожі, щоб ви почувалися як вдома.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+<div class="bg-white p-8 rounded-super-xl shadow-lg border-b-8 border-brand-secondary rotate-1 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-brand-secondary text-5xl mb-6">payments</span>
+<h3 class="text-xl mb-4">Фінансові переваги</h3>
+<p class="text-text-light">Конкурентна заробітна плата та своєчасні виплати без затримок.</p>
+</div>
+<div class="bg-white p-8 rounded-super-xl shadow-lg border-b-8 border-brand-primary -rotate-1 flex flex-col items-center text-center lg:mt-12">
+<span class="material-symbols-outlined text-brand-primary text-5xl mb-6">home_work</span>
+<h3 class="text-xl mb-4">Житло та побут</h3>
+<p class="text-text-light">Забезпечуємо комфортним житлом поруч з місцем роботи.</p>
+</div>
+<div class="bg-white p-8 rounded-super-xl shadow-lg border-b-8 border-brand-secondary rotate-2 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-brand-secondary text-5xl mb-6">description</span>
+<h3 class="text-xl mb-4">Документи та легалізація</h3>
+<p class="text-text-light">Повний юридичний супровід та допомога у підготовці дозволів.</p>
+</div>
+<div class="bg-white p-8 rounded-super-xl shadow-lg border-b-8 border-brand-primary -rotate-2 flex flex-col items-center text-center lg:mt-8">
+<span class="material-symbols-outlined text-brand-primary text-5xl mb-6">local_shipping</span>
+<h3 class="text-xl mb-4">Логістика та транспорт</h3>
+<p class="text-text-light">Організація доїзду до Чехії та щоденний трансфер.</p>
+</div>
+<div class="bg-white p-8 rounded-super-xl shadow-lg border-b-8 border-brand-primary rotate-1 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-brand-primary text-5xl mb-6">support_agent</span>
+<h3 class="text-xl mb-4">Підтримка та комунікація</h3>
+<p class="text-text-light">Цілодобовий зв'язок з координатором для вирішення питань.</p>
+</div>
+<div class="bg-white p-8 rounded-super-xl shadow-lg border-b-8 border-brand-secondary -rotate-1 flex flex-col items-center text-center lg:mt-16">
+<span class="material-symbols-outlined text-brand-secondary text-5xl mb-6">verified_user</span>
+<h3 class="text-xl mb-4">Безпека та довіра</h3>
+<p class="text-text-light">Офіційне працевлаштування та страхування кожного співробітника.</p>
+</div>
+<div class="bg-brand-primary/10 p-10 rounded-super-xl border-4 border-dashed border-brand-primary md:col-span-2 flex flex-col justify-center items-start">
+<h3 class="text-2xl mb-4 text-brand-primary flex items-center gap-3">
+<span class="material-symbols-outlined">add_circle</span>
+                        Додаткові переваги
+                    </h3>
+<p class="text-lg text-text-main font-medium italic">Мовні курси, допомога у відкритті рахунків та кар'єрне зростання всередині компанії.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 md:px-12 bg-white">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center mb-20 text-center md:text-left">
+<h2 class="text-5xl mb-4 md:mb-0">Актуальні <span class="text-brand-secondary">Вакансії</span></h2>
+<div class="bg-sky-blue text-brand-secondary font-headline font-bold px-6 py-2 rounded-full border-2 border-brand-secondary/20">Оновлено сьогодні 🕒</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="group relative bg-lavender p-10 rounded-super-xl hover:bg-white transition-all duration-500 hover:shadow-2xl border-2 border-transparent hover:border-lavender">
+<div class="flex justify-between items-start mb-8">
+<h3 class="text-3xl pr-4">Складальник на завод</h3>
+<div class="bg-brand-primary text-white text-xs px-3 py-1.5 rounded-full font-bold uppercase tracking-wider -rotate-6">Hot 🔥</div>
+</div>
+<div class="space-y-6 mb-12 italic text-lg">
+<div class="flex items-center gap-4 text-brand-secondary">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-bold">1200 - 1500 € / міс</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-text-light">location_on</span>
+<span>Прага, Чехія</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-text-light">schedule</span>
+<span>5-6 днів на тиждень, 8-12 год</span>
+</div>
+</div>
+<button class="w-full py-5 rounded-full bg-brand-primary text-white font-headline font-bold text-xl hover:translate-y-[-4px] shadow-lg transition-transform">Відгукнутися</button>
+</div>
+<div class="group relative bg-warm-peach/50 p-10 rounded-super-xl hover:bg-white transition-all duration-500 hover:shadow-2xl border-2 border-transparent hover:border-warm-peach">
+<h3 class="text-3xl mb-8">Оператор логістичного складу</h3>
+<div class="space-y-6 mb-12 italic text-lg">
+<div class="flex items-center gap-4 text-brand-primary">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-bold">1300 - 1600 € / міс</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-text-light">location_on</span>
+<span>Брно, Чехія</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-text-light">schedule</span>
+<span>Змінний графік, 10-12 год</span>
+</div>
+</div>
+<button class="w-full py-5 rounded-full border-4 border-brand-primary text-brand-primary font-headline font-bold text-xl hover:bg-brand-primary hover:text-white transition-all">Детальніше</button>
+</div>
+<div class="group relative bg-soft-rose p-10 rounded-super-xl hover:bg-white transition-all duration-500 hover:shadow-2xl border-2 border-transparent hover:border-soft-rose">
+<h3 class="text-3xl mb-8">Пакувальник електроніки</h3>
+<div class="space-y-4 mb-12 italic text-lg">
+<div class="flex items-center gap-4 text-brand-secondary"><span class="material-symbols-outlined">payments</span><span class="font-bold">1100 - 1400 €</span></div>
+<div class="flex items-center gap-4"><span class="material-symbols-outlined text-text-light">location_on</span><span>Пльзень</span></div>
+</div>
+<button class="w-full py-5 rounded-full border-4 border-brand-secondary text-brand-secondary font-headline font-bold text-xl hover:bg-brand-secondary hover:text-white transition-all">Детальніше</button>
+</div>
+<div class="group relative bg-mint-cream p-10 rounded-super-xl hover:bg-white transition-all duration-500 hover:shadow-2xl border-2 border-transparent hover:border-mint-cream">
+<div class="flex justify-between items-start mb-8">
+<h3 class="text-3xl pr-4">Водій навантажувача</h3>
+<div class="bg-brand-secondary text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase rotate-3">Cert Req</div>
+</div>
+<div class="space-y-4 mb-12 italic text-lg">
+<div class="flex items-center gap-4 text-brand-primary"><span class="material-symbols-outlined">payments</span><span class="font-bold">1500 - 1800 €</span></div>
+<div class="flex items-center gap-4"><span class="material-symbols-outlined text-text-light">location_on</span><span>Острава</span></div>
+</div>
+<button class="w-full py-5 rounded-full border-4 border-brand-primary text-brand-primary font-headline font-bold text-xl hover:bg-brand-primary hover:text-white transition-all">Детальніше</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 md:px-12 bg-sky-blue/30 relative overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-5xl md:text-6xl mb-24 text-center">Що говорять про <span class="text-brand-primary">MOBIDICK</span></h2>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-32">
+<div class="bg-white p-8 hand-drawn-border border-brand-secondary rotate-[-1deg] relative flex flex-col">
+<div class="bg-lavender/50 rounded-3xl p-4 mb-6 flex items-center gap-4 shadow-inner">
+<button class="w-12 h-12 rounded-full bg-brand-primary text-white flex items-center justify-center hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</button>
+<div class="flex-1 flex items-end gap-1 h-8">
+<div class="w-1.5 bg-brand-primary/40 rounded-full h-3"></div>
+<div class="w-1.5 bg-brand-primary/40 rounded-full h-5"></div>
+<div class="w-1.5 bg-brand-primary/40 rounded-full h-8"></div>
+<div class="w-1.5 bg-brand-primary/40 rounded-full h-4"></div>
+<div class="w-1.5 bg-brand-primary/40 rounded-full h-6"></div>
+<div class="w-1.5 bg-brand-primary/20 rounded-full h-3"></div>
+<div class="w-1.5 bg-brand-primary/20 rounded-full h-5"></div>
+<div class="w-1.5 bg-brand-primary/20 rounded-full h-4"></div>
+<div class="w-1.5 bg-brand-primary/20 rounded-full h-7"></div>
+<div class="w-1.5 bg-brand-primary/20 rounded-full h-3"></div>
+</div>
+<span class="text-sm font-headline font-bold text-brand-primary">0:42</span>
+</div>
+<p class="text-lg italic mb-8 text-text-main">"Дуже задоволений умовами проживання та ставленням координаторів. Все чесно, як і обіцяли на співбесіді."</p>
+<div class="flex items-center gap-4 border-t border-brand-secondary/20 pt-6 mt-auto">
+<div class="w-14 h-14 bg-warm-peach rounded-full overflow-hidden border-2 border-brand-primary">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkm_Tb1Lc8QdWs02nYJTeadVjEJzYkeZuH-bSUnz_yx1xpmpf8Ga8j7K-UvNACGPNgfBkTqi_qvZIiiE8HR4ZBHmYPL-HOyV5GpbdZoVPGHXEz5T9aQ3fmOy0_dAFtACnPgqQ-uhnd7GjlwF9eQS3mcTPatdc8eg42B223T0E1XCKojiLINX7kqTixfnCQIeqoWQa68dU0J4WlSLnPj-AUKr3EfGA5Hdfmprh3xPrwRNIBGkMeXU0qCvFG29GF04gPS504CVD3OHw"/>
+</div>
+<div>
+<div class="font-bold font-headline">Олександр В.</div>
+<div class="text-sm text-text-light">Оператор складу</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 hand-drawn-border border-brand-primary rotate-[1deg] lg:mt-8 relative flex flex-col">
+<div class="bg-sky-blue/50 rounded-3xl p-4 mb-6 flex items-center gap-4 shadow-inner">
+<button class="w-12 h-12 rounded-full bg-brand-secondary text-white flex items-center justify-center hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</button>
+<div class="flex-1 flex items-end gap-1 h-8">
+<div class="w-1.5 bg-brand-secondary/40 rounded-full h-4"></div>
+<div class="w-1.5 bg-brand-secondary/40 rounded-full h-7"></div>
+<div class="w-1.5 bg-brand-secondary/40 rounded-full h-5"></div>
+<div class="w-1.5 bg-brand-secondary/40 rounded-full h-3"></div>
+<div class="w-1.5 bg-brand-secondary/20 rounded-full h-6"></div>
+<div class="w-1.5 bg-brand-secondary/20 rounded-full h-8"></div>
+<div class="w-1.5 bg-brand-secondary/20 rounded-full h-4"></div>
+<div class="w-1.5 bg-brand-secondary/20 rounded-full h-5"></div>
+<div class="w-1.5 bg-brand-secondary/20 rounded-full h-3"></div>
+<div class="w-1.5 bg-brand-secondary/20 rounded-full h-6"></div>
+</div>
+<span class="text-sm font-headline font-bold text-brand-secondary">0:58</span>
+</div>
+<p class="text-lg italic mb-8 text-text-main">"Працюю вже півроку через цю агенцію. Житло безкоштовне, умови гідні, зарплата завжди вчасно. Рекомендую!"</p>
+<div class="flex items-center gap-4 border-t border-brand-primary/20 pt-6 mt-auto">
+<div class="w-14 h-14 bg-mint-cream rounded-full overflow-hidden border-2 border-brand-secondary">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYCFjOSgnfQZPJKQfaOOha1tKg5XzB9mKVdBULawJMIGpHZMUUh1GgZApEGoZziaXlp4ZMlQBFg700-3Ao5Fl7_xgZSHwmL-F-YN0vrBczOuq9A3TXpGjSR8-rCZG6wEVJhSDNx_6ys4CO5iR8NkgdBd4rMbnvRh1uIAQSI2PPPx7DI5N_1y51C2EbHrXvLitBLs5969lg29ghmVxMGXBQOXGpO2jyDk0l7NrE9M7jJHLsBMijEqWr9Vx5f0arOwd2QR9bWs86E2w"/>
+</div>
+<div>
+<div class="font-bold font-headline">Марина К.</div>
+<div class="text-sm text-text-light">Пакувальник</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 hand-drawn-border border-brand-secondary rotate-[-2deg] relative flex flex-col">
+<div class="bg-warm-peach/50 rounded-3xl p-4 mb-6 flex items-center gap-4 shadow-inner">
+<button class="w-12 h-12 rounded-full bg-brand-primary text-white flex items-center justify-center hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</button>
+<div class="flex-1 flex items-end gap-1 h-8">
+<div class="w-1.5 bg-brand-primary/40 rounded-full h-3"></div>
+<div class="w-1.5 bg-brand-primary/40 rounded-full h-5"></div>
+<div class="w-1.5 bg-brand-primary/40 rounded-full h-4"></div>
+<div class="w-1.5 bg-brand-primary/40 rounded-full h-8"></div>
+<div class="w-1.5 bg-brand-primary/40 rounded-full h-6"></div>
+<div class="w-1.5 bg-brand-primary/20 rounded-full h-4"></div>
+<div class="w-1.5 bg-brand-primary/20 rounded-full h-7"></div>
+<div class="w-1.5 bg-brand-primary/20 rounded-full h-3"></div>
+<div class="w-1.5 bg-brand-primary/20 rounded-full h-5"></div>
+<div class="w-1.5 bg-brand-primary/20 rounded-full h-4"></div>
+</div>
+<span class="text-sm font-headline font-bold text-brand-primary">1:12</span>
+</div>
+<p class="text-lg italic mb-8 text-text-main">"MOBIDICK допомогли з усіма документами швидко. Доїзд був організований на найвищому рівні. Дякую!"</p>
+<div class="flex items-center gap-4 border-t border-brand-secondary/20 pt-6 mt-auto">
+<div class="w-14 h-14 bg-soft-rose rounded-full overflow-hidden border-2 border-brand-primary">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc6O-K8ckBpelWsQfBiy9we6dyBigYs0yc3oeB_eIQb_d7EiTbYX8uOABoRxwRM4EYObaWskiOwdW7BzMcz4k8tA0WIxkA-lw47vgY7izaclH9NAMg9Tz8x0fKWMO1Bcobw280hpcj0N5DTGnhrNpDKs7M_qBnzja83bHOYK8CYvCevhcAQVTBGj_BmsB9Oi6dtifbu_vOTacl307T549qZTpjjgXEA3Dxq7mF_24PanLrrAnHvEeYDcJdQaklhuDMyZVOU8IQbZ8"/>
+</div>
+<div>
+<div class="font-bold font-headline">Дмитро С.</div>
+<div class="text-sm text-text-light">Складальник</div>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-12">
+<h3 class="text-4xl text-center mb-16">Реальні фото умов проживання</h3>
+<div class="flex flex-wrap justify-center gap-8 px-4">
+<img class="w-64 h-80 object-cover hand-drawn-border border-brand-primary rotate-3 hover:rotate-0 transition-transform shadow-lg bg-white p-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFIdUw-xj9fk7_0Qh9m5iM1e_MDe1ZwBeNdwBG1bAf4yT5_2RxSBqrJU9PU9QYD30dkR3juqENT3OttThUWNMHXkSZBkIEaszxqTKcEC2yG_ABPZOdkjAm4A4rm-cCyOGbQ2sSZxbO6aEIp71r3b4QdR3eGKTEmp26oqZQUPFDcjmuTLuNEtyr9ECeJxPGiCfy05IBx9T-XK2xUTe6A7fVZ2TZrDbG_0wn2LOXBbJCuVGF-EkMAg82Ioj38pLZn-JlE_giPz-w4rQ"/>
+<img class="w-64 h-80 object-cover hand-drawn-border border-brand-secondary -rotate-2 hover:rotate-0 transition-transform shadow-lg bg-white p-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6B0C02YYqlPVLZt4Ffm0XogtIbM5zda9IiizBRdipNHVWsYXPho28J4unmjWMRvhfjvYxmVUHj8tTdfrD4gXw7t3nl-lbQH1Guf2J8O0GS6wNLaQwMFmM8guRXoQ6YvFmiAXqtuYNWsGPWRXum9Ag5sjyhY6VUheji7E8aQf5pRFHMKFWHEX9auS5Q9HUKwBPnxuMKQpSkdolwK_x9bUz3FakvXnlsLJWFbzMeglAeJ1r_BJuOXVNxBvXXiAvZerlV8OF47psksg"/>
+<img class="w-64 h-80 object-cover hand-drawn-border border-brand-primary rotate-1 hover:rotate-0 transition-transform shadow-lg bg-white p-2 mt-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7FbW_IxnwCNDumZG6M3Q0XmJYJWGYosaPcM5IW3Yp3f9LYNsr0zMubVCvuOL4s891nvJklSbedRhn255lWxAUL6oPS052QCRZ807u_M7A3WzKLaCpNL3xF_8k6NM7JPys7D3guNNQplpAxL82RQiz73VyUKqy5DQJubEfHVTKGmi_Ioqq7YVUEBKjHKtsi0TtB7FnSR2q2rjdYBl5NlkR2CQUs7Dk6wdyG-iRHTiUr1-JL8MrLnqVePSV8PNAjrRz8RrtLay1F5A"/>
+<img class="w-64 h-80 object-cover hand-drawn-border border-brand-secondary -rotate-3 hover:rotate-0 transition-transform shadow-lg bg-white p-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnaTb1Xtqc7NdQmM26OU50RJp9MkWnXUKMhGkmqQ54_ftS5NtRS6f0KB2OgktU-KNNlBkcvifYMiPdeEqbZU7XmTC51GBOcBkVAdLdGy-IEssDZ70AtBhV2_ujK3DfSInOVtyb2amnLf0ccwT20RzBWWbWihMwNCsfOJ_H4POWQYZGETX67PoeEUth8dz2aHP06Mor99x2UsTRCWk7-kuqtKB5SRNAYavMIh2I_t80GVjU1hpSmyovIIOmcZVPkg3xaXLeOiUoJ_w"/>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 md:px-12 bg-white relative overflow-hidden">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="text-5xl mb-6">FAQ</h2>
+<div class="w-24 h-2 bg-brand-primary/20 mx-auto rounded-full"></div>
+</div>
+<div class="space-y-6">
+<div class="bg-lavender/40 rounded-3xl p-8 border-2 border-lavender group cursor-pointer hover:bg-lavender transition-all">
+<div class="flex justify-between items-center">
+<h4 class="text-xl">Які документи потрібні для початку співпраці?</h4>
+<span class="material-symbols-outlined text-brand-secondary group-hover:rotate-180 transition-transform">expand_more</span>
+</div>
+<div class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+                        Для початку роботи вам знадобиться закордонний паспорт. Наша команда допоможе з оформленням робочої візи або посвідки на проживання в Чехії.
+                    </div>
+</div>
+<div class="bg-warm-peach/30 rounded-3xl p-8 border-2 border-warm-peach group cursor-pointer hover:bg-warm-peach transition-all">
+<div class="flex justify-between items-center">
+<h4 class="text-xl">Чи потрібно знати чеську мову?</h4>
+<span class="material-symbols-outlined text-brand-primary group-hover:rotate-180 transition-transform">expand_more</span>
+</div>
+<div class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+                        На більшість позицій знання мови не обов'язкове. На кожному заводі працюють наші україномовні координатори, які допоможуть вам з адаптацією.
+                    </div>
+</div>
+<div class="bg-mint-cream/50 rounded-3xl p-8 border-2 border-mint-cream group cursor-pointer hover:bg-mint-cream transition-all">
+<div class="flex justify-between items-center">
+<h4 class="text-xl">Скільки часу займає процес працевлаштування?</h4>
+<span class="material-symbols-outlined text-brand-secondary group-hover:rotate-180 transition-transform">expand_more</span>
+</div>
+<div class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+                        У середньому від моменту подачі документів до виїзду проходить від 2 до 4 тижнів, залежно від обраної вакансії та швидкості підготовки візи.
+                    </div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 md:px-12 bg-warm-peach/20 overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<h2 class="text-6xl mb-12 relative">
+                    Контакти
+                    <span class="absolute -bottom-4 left-0 w-32 h-1.5 bg-brand-primary rounded-full"></span>
+</h2>
+<div class="space-y-12">
+<div class="grid grid-cols-2 gap-6">
+<a class="flex items-center justify-center gap-3 bg-white text-text-main py-4 rounded-2xl hand-drawn-border border-brand-primary hover:bg-brand-primary hover:text-white transition-all font-bold" href="#">
+<span class="material-symbols-outlined">camera_alt</span>
+<span>Instagram</span>
+</a>
+<a class="flex items-center justify-center gap-3 bg-white text-text-main py-4 rounded-2xl hand-drawn-border border-brand-secondary hover:bg-brand-secondary hover:text-white transition-all font-bold" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+<span>Facebook</span>
+</a>
+<a class="flex items-center justify-center gap-3 bg-white text-text-main py-4 rounded-2xl hand-drawn-border border-brand-secondary hover:bg-brand-secondary hover:text-white transition-all font-bold" href="#">
+<span class="material-symbols-outlined">send</span>
+<span>Telegram</span>
+</a>
+<a class="flex items-center justify-center gap-3 bg-white text-text-main py-4 rounded-2xl hand-drawn-border border-brand-primary hover:bg-brand-primary hover:text-white transition-all font-bold" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span>Viber</span>
+</a>
+</div>
+<div class="space-y-8 p-10 bg-white rounded-super-xl shadow-xl rotate-1">
+<div class="flex items-center gap-6 group">
+<div class="w-16 h-16 rounded-blob bg-sky-blue flex items-center justify-center text-brand-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">call</span>
+</div>
+<span class="text-3xl font-headline font-bold">+420 123 456 789</span>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-16 h-16 rounded-blob bg-warm-peach flex items-center justify-center text-brand-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">mail</span>
+</div>
+<span class="text-3xl font-headline font-bold">job@mobidick.cz</span>
+</div>
+</div>
+</div>
+</div>
+<div class="relative h-[600px]">
+<div class="absolute inset-0 bg-white hand-drawn-border border-brand-secondary -rotate-2 p-4 shadow-2xl">
+<iframe allowfullscreen="" class="w-full h-full rounded-2xl" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163945.1917719602!2d14.285160898822365!3d50.05943714652236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b939c0970798b%3A0x400af0f66164090!2zUHJhZ3VlLCBDemVjaGlh!5e0!3m2!1sen!2sua!4v1714574928192!5m2!1sen!2sua" style="border:0;"></iframe>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white border-t-8 border-brand-primary py-20 px-6 md:px-12 relative overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start gap-16">
+<div class="max-w-xs">
+<span class="text-4xl font-headline font-black text-brand-primary mb-6 block">MOBIDICK</span>
+<p class="text-text-light text-lg italic leading-relaxed">Ми віримо, що кожен заслуговує на успішний старт у новому місці. Подорожуйте з посмішкою разом з нами.</p>
+<div class="mt-8 text-sm text-text-light">© 2024 MOBIDICK Recruitment. Всі права захищені.</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12 lg:gap-24">
+<div class="space-y-4">
+<span class="font-headline font-bold text-brand-secondary uppercase tracking-widest block mb-2">Соціальні</span>
+<a class="block text-text-main hover:text-brand-primary transition-colors italic" href="#">Instagram</a>
+<a class="block text-text-main hover:text-brand-primary transition-colors italic" href="#">Facebook</a>
+<a class="block text-text-main hover:text-brand-primary transition-colors italic" href="#">Telegram</a>
+</div>
+<div class="space-y-4">
+<span class="font-headline font-bold text-brand-primary uppercase tracking-widest block mb-2">Навігація</span>
+<a class="block text-text-main hover:text-brand-secondary transition-colors italic" href="#">Умови</a>
+<a class="block text-text-main hover:text-brand-secondary transition-colors italic" href="#">Вакансії</a>
+<a class="block text-text-main hover:text-brand-secondary transition-colors italic" href="#">FAQ</a>
+</div>
+<div class="space-y-4">
+<span class="font-headline font-bold text-brand-secondary uppercase tracking-widest block mb-2">Юридична</span>
+<a class="block text-text-main hover:text-brand-primary transition-colors italic" href="#">Політика конфіденційності</a>
+<a class="block text-text-main hover:text-brand-primary transition-colors italic" href="#">Viber</a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-0 right-0 opacity-10 pointer-events-none">
+<span class="text-[20rem] leading-none">🇨🇿</span>
+</div>
+</footer>
+</body></html>
