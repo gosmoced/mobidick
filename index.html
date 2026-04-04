@@ -92,9 +92,37 @@
       >FAQ</a>
   </div>
   <button
-    class="bg-brand-primary text-white px-6 py-2.5 rounded-full font-headline font-bold hover:rotate-2 hover:scale-105 transition-all shadow-lg">
+    class="hidden md:block bg-brand-primary text-white px-6 py-2.5 rounded-full font-headline font-bold hover:rotate-2 hover:scale-105 transition-all shadow-lg">
     Зв'язатися
   </button>
+
+  <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-brand-primary hover:bg-brand-primary/10 rounded-full transition-colors">
+    <span class="material-symbols-outlined text-3xl transition-transform duration-300" id="mobile-menu-icon">menu</span>
+  </button>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="absolute top-full left-0 right-0 mt-4 bg-white/95 backdrop-blur-md border-2 border-brand-primary/20 rounded-3xl p-6 shadow-xl flex-col gap-6 hidden md:hidden transition-all duration-300 opacity-0 -translate-y-4 scale-95 transform origin-top">
+    <a
+      class="font-headline font-semibold text-xl text-text-main hover:text-brand-primary transition-colors text-center"
+      href="#"
+      >Умови</a>
+    <a
+      class="font-headline font-semibold text-xl text-text-main hover:text-brand-primary transition-colors text-center"
+      href="#"
+      >Вакансії</a>
+    <a
+      class="font-headline font-semibold text-xl text-text-main hover:text-brand-primary transition-colors text-center"
+      href="#"
+      >Контакти</a>
+    <a
+      class="font-headline font-semibold text-xl text-text-main hover:text-brand-primary transition-colors text-center"
+      href="#"
+      >FAQ</a>
+    <button
+      class="w-full bg-brand-primary text-white px-6 py-3 rounded-full font-headline font-bold hover:scale-105 transition-transform shadow-lg mt-2">
+      Зв'язатися
+    </button>
+  </div>
 </nav>
 <main>
   <section class="relative pt-24 pb-32 px-6 md:px-12 overflow-hidden">
@@ -287,7 +315,7 @@
           <div class="flex justify-between items-start mb-8">
             <h3 class="text-3xl pr-4">Складальник на завод</h3>
             <div
-              class="bg-brand-primary text-white text-xs px-3 py-1.5 rounded-full font-bold uppercase tracking-wider -rotate-6">
+              class="bg-brand-primary text-white text-xs px-3 py-1.5 rounded-full font-bold uppercase tracking-wider -rotate-6 shrink-0 whitespace-nowrap">
               Hot
             </div>
           </div>
@@ -365,7 +393,7 @@
           <div class="flex justify-between items-start mb-8">
             <h3 class="text-3xl pr-4">Водій навантажувача</h3>
             <div
-              class="bg-brand-secondary text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase rotate-3">
+              class="bg-brand-secondary text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase rotate-3 shrink-0 whitespace-nowrap">
               Cert Req
             </div>
           </div>
@@ -721,7 +749,7 @@
             class="space-y-8 p-10 bg-white rounded-super-xl shadow-xl rotate-1">
             <div class="flex items-center gap-6 group">
               <div
-                class="w-16 h-16 rounded-blob bg-sky-blue flex items-center justify-center text-brand-secondary group-hover:scale-110 transition-transform">
+                class="w-16 h-16 rounded-blob bg-sky-blue flex items-center justify-center text-brand-secondary group-hover:scale-110 transition-transform shrink-0">
                 <span class="material-symbols-outlined text-4xl">call</span>
               </div>
               <span class="text-3xl font-headline font-bold"
@@ -729,10 +757,10 @@
             </div>
             <div class="flex items-center gap-6 group">
               <div
-                class="w-16 h-16 rounded-blob bg-warm-peach flex items-center justify-center text-brand-primary group-hover:scale-110 transition-transform">
+                class="w-16 h-16 rounded-blob bg-warm-peach flex items-center justify-center text-brand-primary group-hover:scale-110 transition-transform shrink-0">
                 <span class="material-symbols-outlined text-4xl">mail</span>
               </div>
-              <span class="text-3xl font-headline font-bold"
+              <span class="text-3xl font-headline font-bold break-all"
                 >hrmobidick@gmail.com</span>
             </div>
           </div>
@@ -810,5 +838,34 @@
     <span class="text-[20rem] leading-none">🇨🇿</span>
   </div>
 </footer>
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const icon = document.getElementById('mobile-menu-icon');
+
+  btn.addEventListener('click', () => {
+    const isHidden = menu.classList.contains('hidden');
+
+    if (isHidden) {
+      menu.classList.remove('hidden');
+      // trigger reflow
+      void menu.offsetWidth;
+      menu.classList.add('flex');
+      menu.classList.remove('opacity-0', '-translate-y-4', 'scale-95');
+      menu.classList.add('opacity-100', 'translate-y-0', 'scale-100');
+      icon.textContent = 'close';
+      icon.classList.add('rotate-90');
+    } else {
+      menu.classList.remove('opacity-100', 'translate-y-0', 'scale-100');
+      menu.classList.add('opacity-0', '-translate-y-4', 'scale-95');
+      icon.textContent = 'menu';
+      icon.classList.remove('rotate-90');
+      setTimeout(() => {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex');
+      }, 300); // match duration-300
+    }
+  });
+</script>
 </body>
 </html>
