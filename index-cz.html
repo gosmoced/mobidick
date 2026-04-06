@@ -3,10 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<link
-  href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&amp;family=Lora:ital,wght@0,400;0,500;1,400&amp;display=swap"
-  rel="stylesheet"
-/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
   rel="stylesheet"
@@ -33,7 +30,7 @@
           "super-xl": "3rem",
         },
         fontFamily: {
-          headline: ["Fredoka", "sans-serif"],
+          headline: ["Nunito", "sans-serif"],
           body: ["Lora", "serif"],
         },
       },
@@ -91,36 +88,36 @@
 <body class="overflow-x-hidden">
 <nav
   class="sticky top-4 mx-4 md:mx-12 z-[100] bg-white/80 backdrop-blur-md rounded-full border-2 border-brand-primary/20 p-2 px-6 shadow-xl flex justify-between items-center">
+
   <a
     class="text-3xl font-headline font-black text-brand-primary tracking-tight"
     href=""
     >MOBIDICK</a>
-  <div class="hidden md:flex items-center gap-8">
-    <a
-      class="font-headline font-semibold text-text-main hover:text-brand-primary transition-colors"
-      href="#conditions"
-      >Výhody</a>
-    <a
-      class="font-headline font-semibold text-text-main hover:text-brand-primary transition-colors"
-      href="#vacancies"
-      >Volná místa</a>
-    <a
-      class="font-headline font-semibold text-text-main hover:text-brand-primary transition-colors"
-      href="#contact"
-      >Kontakty</a>
-    <a
-      class="font-headline font-semibold text-text-main hover:text-brand-primary transition-colors"
-      href="#FAQ"
-      >FAQ</a>
-  </div>
-  <button
-    class="hidden md:block bg-brand-primary text-white px-6 py-2.5 rounded-full font-headline font-bold hover:rotate-2 hover:scale-105 transition-all shadow-lg js-open-modal">
-    Kontaktovat
-  </button>
 
-  <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-brand-primary hover:bg-brand-primary/10 rounded-full transition-colors">
-    <span class="material-symbols-outlined text-3xl transition-transform duration-300" id="mobile-menu-icon">menu</span>
-  </button>
+  <div class="hidden md:flex items-center gap-8">
+    <a class="font-headline font-semibold text-text-main hover:text-brand-primary transition-colors" href="#conditions">Výhody</a>
+    <a class="font-headline font-semibold text-text-main hover:text-brand-primary transition-colors" href="#vacancies">Volná místa</a>
+    <a class="font-headline font-semibold text-text-main hover:text-brand-primary transition-colors" href="#contact">Kontakty</a>
+    <a class="font-headline font-semibold text-text-main hover:text-brand-primary transition-colors" href="#FAQ">FAQ</a>
+  </div>
+
+  <div class="flex items-center gap-2 md:gap-4">
+
+    <a href="index.html"
+       class="flex items-center justify-center w-10 h-10 rounded-full bg-brand-primary/10 text-brand-primary hover:bg-brand-primary hover:text-white transition-colors font-headline font-bold text-sm shrink-0"
+       title="Ukrajinská verze">
+      UK
+    </a>
+
+    <button class="hidden md:block bg-brand-primary text-white px-6 py-2.5 rounded-full font-headline font-bold hover:rotate-2 hover:scale-105 transition-all shadow-lg js-open-modal">
+      Kontaktovat
+    </button>
+
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-brand-primary hover:bg-brand-primary/10 rounded-full transition-colors">
+      <span class="material-symbols-outlined text-3xl transition-transform duration-300" id="mobile-menu-icon">menu</span>
+    </button>
+
+  </div>
 
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="absolute top-full left-0 right-0 mt-4 bg-white/95 backdrop-blur-md border-2 border-brand-primary/20 rounded-3xl p-6 shadow-xl flex-col gap-6 hidden md:hidden transition-all duration-300 opacity-0 -translate-y-4 scale-95 transform origin-top">
@@ -351,10 +348,28 @@
             </div>
           </div>
           <button
-            class="w-full py-5 rounded-full border-4 border-brand-secondary text-brand-secondary font-headline font-bold text-xl hover:bg-brand-secondary hover:text-white transition-all">
+            data-target="modal-vacancy-1" class="w-full py-5 rounded-full border-4 border-brand-secondary text-brand-secondary font-headline font-bold text-xl hover:bg-brand-secondary hover:text-white transition-all js-vacancy-btn">
             Více informací
           </button>
         </div>
+        <div id="modal-vacancy-1" class="fixed inset-0 z-[150] flex items-center justify-center hidden opacity-0 transition-opacity duration-300 js-vacancy-modal">
+          <div class="absolute inset-0 bg-text-main/60 backdrop-blur-sm cursor-pointer js-close-vacancy"></div>
+          <div class="relative bg-white p-8 md:p-12 max-h-[90vh] overflow-y-auto rounded-super-xl shadow-2xl w-[95%] max-w-3xl transform scale-95 transition-transform duration-300 js-vacancy-content border-2 border-brand-secondary/20">
+            <button class="absolute top-6 right-6 text-text-light hover:text-red-500 transition-colors js-close-vacancy">
+              <span class="material-symbols-outlined pointer-events-none text-3xl">close</span>
+            </button>
+            <h3 class="text-4xl mb-6 pr-16 font-headline font-bold text-brand-secondary">Montér v továrně</h3>
+            <div class="text-lg text-text-main space-y-4 mb-8">
+              <p><strong>Náplň práce:</strong> Montáž dílů na běžícím pásu, kontrola kvality výroby, udržování pořádku na pracovišti.</p>
+              <p><strong>Požadavky:</strong> Ochota pracovat, spolehlivost, možno i bez praxe (zaučíme na místě).</p>
+              <p><strong>Pracovní podmínky:</strong> Teplota v hale: stabilní, +18…+22 °C. Typ práce: práce ve stoje, možné monotónní úkony. Pracovní oděv: poskytujeme zdarma (bunda, kalhoty, obuv, rukavice). Přestávky: 2 krátké + 1 obědová.</p>
+            </div>
+            <button class="w-full md:w-auto bg-brand-primary text-white px-8 py-4 rounded-full font-headline font-bold hover:scale-105 transition-transform shadow-lg js-open-modal js-close-vacancy">
+              Reagovat na nabídku
+            </button>
+          </div>
+        </div>
+
         <div
           class="group relative bg-warm-peach/50 p-10 rounded-super-xl hover:bg-white transition-all duration-500 hover:shadow-2xl border-2 border-transparent hover:border-warm-peach">
           <h3 class="text-3xl mb-8">Operátor výroby</h3>
@@ -375,9 +390,27 @@
             </div>
           </div>
           <button
-            class="w-full py-5 rounded-full border-4 border-brand-primary text-brand-primary font-headline font-bold text-xl hover:bg-brand-primary hover:text-white transition-all">
+            data-target="modal-vacancy-2" class="w-full py-5 rounded-full border-4 border-brand-primary text-brand-primary font-headline font-bold text-xl hover:bg-brand-primary hover:text-white transition-all js-vacancy-btn">
             Více informací
           </button>
+          <div id="modal-vacancy-2" class="fixed inset-0 z-[150] flex items-center justify-center hidden opacity-0 transition-opacity duration-300 js-vacancy-modal">
+          <div class="absolute inset-0 bg-text-main/60 backdrop-blur-sm cursor-pointer js-close-vacancy"></div>
+          <div class="relative bg-white p-8 md:p-12 max-h-[90vh] overflow-y-auto rounded-super-xl shadow-2xl w-[95%] max-w-3xl transform scale-95 transition-transform duration-300 js-vacancy-content border-2 border-brand-secondary/20">
+            <button class="absolute top-6 right-6 text-text-light hover:text-red-500 transition-colors js-close-vacancy">
+              <span class="material-symbols-outlined pointer-events-none text-3xl">close</span>
+            </button>
+            <h3 class="text-4xl mb-6 pr-16 font-headline font-bold text-brand-secondary">Operátor výroby</h3>
+            <div class="text-lg text-text-main space-y-4 mb-8">
+              <p><strong>Náplň práce:</strong> Montáž dílů na běžícím pásu, kontrola kvality výroby, udržování pořádku na pracovišti.</p>
+              <p><strong>Požadavky:</strong> Ochota pracovat, spolehlivost, možno i bez praxe (zaučíme na místě).</p>
+              <p><strong>Pracovní podmínky:</strong> Teplota v hale: stabilní, +18…+22 °C. Typ práce: práce ve stoje, možné monotónní úkony. Pracovní oděv: poskytujeme zdarma (bunda, kalhoty, obuv, rukavice). Přestávky: 2 krátké + 1 obědová.</p>
+            </div>
+            <button class="w-full md:w-auto bg-brand-primary text-white px-8 py-4 rounded-full font-headline font-bold hover:scale-105 transition-transform shadow-lg js-open-modal js-close-vacancy">
+              Reagovat na nabídku
+            </button>
+          </div>
+        </div>
+
         </div>
         <div
           class="group relative bg-soft-rose p-10 rounded-super-xl hover:bg-white transition-all duration-500 hover:shadow-2xl border-2 border-transparent hover:border-soft-rose">
@@ -399,10 +432,28 @@
             </div>
           </div>
           <button
-            class="w-full py-5 rounded-full border-4 border-brand-secondary text-brand-secondary font-headline font-bold text-xl hover:bg-brand-secondary hover:text-white transition-all">
+            data-target="modal-vacancy-3" class="w-full py-5 rounded-full border-4 border-brand-secondary text-brand-secondary font-headline font-bold text-xl hover:bg-brand-secondary hover:text-white transition-all js-vacancy-btn">
             Více informací
           </button>
         </div>
+        <div id="modal-vacancy-3" class="fixed inset-0 z-[150] flex items-center justify-center hidden opacity-0 transition-opacity duration-300 js-vacancy-modal">
+          <div class="absolute inset-0 bg-text-main/60 backdrop-blur-sm cursor-pointer js-close-vacancy"></div>
+          <div class="relative bg-white p-8 md:p-12 max-h-[90vh] overflow-y-auto rounded-super-xl shadow-2xl w-[95%] max-w-3xl transform scale-95 transition-transform duration-300 js-vacancy-content border-2 border-brand-secondary/20">
+            <button class="absolute top-6 right-6 text-text-light hover:text-red-500 transition-colors js-close-vacancy">
+              <span class="material-symbols-outlined pointer-events-none text-3xl">close</span>
+            </button>
+            <h3 class="text-4xl mb-6 pr-16 font-headline font-bold text-brand-secondary">Balicí elektroniky</h3>
+            <div class="text-lg text-text-main space-y-4 mb-8">
+              <p><strong>Náplň práce:</strong> Montáž dílů na běžícím pásu, kontrola kvality výroby, udržování pořádku na pracovišti.</p>
+              <p><strong>Požadavky:</strong> Ochota pracovat, spolehlivost, možno i bez praxe (zaučíme na místě).</p>
+              <p><strong>Pracovní podmínky:</strong> Teplota v hale: stabilní, +18…+22 °C. Typ práce: práce ve stoje, možné monotónní úkony. Pracovní oděv: poskytujeme zdarma (bunda, kalhoty, obuv, rukavice). Přestávky: 2 krátké + 1 obědová.</p>
+            </div>
+            <button class="w-full md:w-auto bg-brand-primary text-white px-8 py-4 rounded-full font-headline font-bold hover:scale-105 transition-transform shadow-lg js-open-modal js-close-vacancy">
+              Reagovat na nabídku
+            </button>
+          </div>
+        </div>
+
         <div
           class="group relative bg-mint-cream p-10 rounded-super-xl hover:bg-white transition-all duration-500 hover:shadow-2xl border-2 border-transparent hover:border-mint-cream">
         <h3 class="text-3xl mb-8">Řidič kamionu</h3>
@@ -423,10 +474,28 @@
             </div>
           </div>
           <button
-            class="w-full py-5 rounded-full border-4 border-brand-primary text-brand-primary font-headline font-bold text-xl hover:bg-brand-primary hover:text-white transition-all">
+            data-target="modal-vacancy-4" class="w-full py-5 rounded-full border-4 border-brand-primary text-brand-primary font-headline font-bold text-xl hover:bg-brand-primary hover:text-white transition-all js-vacancy-btn">
             Více informací
           </button>
         </div>
+        <div id="modal-vacancy-4" class="fixed inset-0 z-[150] flex items-center justify-center hidden opacity-0 transition-opacity duration-300 js-vacancy-modal">
+          <div class="absolute inset-0 bg-text-main/60 backdrop-blur-sm cursor-pointer js-close-vacancy"></div>
+          <div class="relative bg-white p-8 md:p-12 max-h-[90vh] overflow-y-auto rounded-super-xl shadow-2xl w-[95%] max-w-3xl transform scale-95 transition-transform duration-300 js-vacancy-content border-2 border-brand-secondary/20">
+            <button class="absolute top-6 right-6 text-text-light hover:text-red-500 transition-colors js-close-vacancy">
+              <span class="material-symbols-outlined pointer-events-none text-3xl">close</span>
+            </button>
+            <h3 class="text-4xl mb-6 pr-16 font-headline font-bold text-brand-secondary">Řidič kamionu</h3>
+            <div class="text-lg text-text-main space-y-4 mb-8">
+              <p><strong>Náplň práce:</strong> Montáž dílů na běžícím pásu, kontrola kvality výroby, udržování pořádku na pracovišti.</p>
+              <p><strong>Požadavky:</strong> Ochota pracovat, spolehlivost, možno i bez praxe (zaučíme na místě).</p>
+              <p><strong>Pracovní podmínky:</strong> Teplota v hale: stabilní, +18…+22 °C. Typ práce: práce ve stoje, možné monotónní úkony. Pracovní oděv: poskytujeme zdarma (bunda, kalhoty, obuv, rukavice). Přestávky: 2 krátké + 1 obědová.</p>
+            </div>
+            <button class="w-full md:w-auto bg-brand-primary text-white px-8 py-4 rounded-full font-headline font-bold hover:scale-105 transition-transform shadow-lg js-open-modal js-close-vacancy">
+              Reagovat na nabídku
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -887,7 +956,6 @@
 </div>
 
 <script>
-
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('mobile-menu-btn');
   const menu = document.getElementById('mobile-menu');
@@ -954,6 +1022,9 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.classList.remove('opacity-0');
       modalContent.classList.remove('scale-95');
       modalContent.classList.add('scale-100');
+      setTimeout(() => {
+      document.body.style.overflow = 'hidden';
+    }, 10);
     };
 
     // Функция закрытия
@@ -961,6 +1032,7 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.classList.add('opacity-0');
       modalContent.classList.remove('scale-100');
       modalContent.classList.add('scale-95');
+      document.body.style.overflow = '';
 
       setTimeout(() => {
         modal.classList.add('hidden');
@@ -1048,6 +1120,53 @@ document.addEventListener('DOMContentLoaded', () => {
       icon.textContent = 'play_arrow';
       wave.classList.remove('playing-wave');
       timeDisplay.textContent = formatTime(audio.duration); // Возвращаем общее время
+    });
+  });
+
+
+
+  // --- ЛОГИКА МОДАЛЬНЫХ ОКОН ВАКАНСИЙ ---
+  const vacancyBtns = document.querySelectorAll('.js-vacancy-btn');
+
+  vacancyBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Узнаем, какое именно окно открывать
+      const targetId = btn.getAttribute('data-target');
+      const modal = document.getElementById(targetId);
+
+      if (!modal) return;
+
+      const modalContent = modal.querySelector('.js-vacancy-content');
+
+      // Открываем окно
+      modal.classList.remove('hidden');
+      void modal.offsetWidth; // Триггер анимации
+      modal.classList.remove('opacity-0');
+      modalContent.classList.remove('scale-95');
+      modalContent.classList.add('scale-100');
+
+      // Блокируем скролл страницы на фоне
+      document.body.style.overflow = 'hidden';
+
+      // Находим кнопки закрытия именно внутри ЭТОГО окна
+      const closeElements = modal.querySelectorAll('.js-close-vacancy');
+
+      const closeFn = () => {
+        modal.classList.add('opacity-0');
+        modalContent.classList.remove('scale-100');
+        modalContent.classList.add('scale-95');
+        document.body.style.overflow = ''; // Возвращаем скролл
+
+        setTimeout(() => {
+          modal.classList.add('hidden');
+        }, 300);
+
+        // Удаляем слушатели, чтобы они не накапливались
+        closeElements.forEach(el => el.removeEventListener('click', closeFn));
+      };
+
+      // Вешаем закрытие на крестик и темный фон
+      closeElements.forEach(el => el.addEventListener('click', closeFn));
     });
   });
 
