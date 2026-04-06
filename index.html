@@ -413,7 +413,7 @@
           class="group relative bg-soft-rose p-10 rounded-super-xl hover:bg-white transition-all duration-500 hover:shadow-2xl border-2 border-transparent hover:border-soft-rose">
           <h3 class="text-3xl mb-8">Пакувальник електроніки</h3>
           <div class="space-y-4 mb-12 italic text-lg">
-            <div class="flex items-center gap-4 text-brand-secondary">
+            <div class="flex items-center gap-4 text-red-500">
               <span class="material-symbols-outlined">payments</span
               ><span class="font-bold">150 Kč / год.</span>
             </div>
@@ -429,7 +429,7 @@
             </div>
           </div>
           <button
-            data-target="modal-vacancy-3" class="w-full py-5 rounded-full border-4 border-brand-secondary text-brand-secondary font-headline font-bold text-xl hover:bg-brand-secondary hover:text-white transition-all js-vacancy-btn">
+            data-target="modal-vacancy-3" class="w-full py-5 rounded-full border-4 border-red-500 text-red-500 font-headline font-bold text-xl hover:bg-red-500 hover:text-white transition-all js-vacancy-btn">
             Детальніше
           </button>
         </div>
@@ -455,7 +455,7 @@
           class="group relative bg-mint-cream p-10 rounded-super-xl hover:bg-white transition-all duration-500 hover:shadow-2xl border-2 border-transparent hover:border-mint-cream">
         <h3 class="text-3xl mb-8">Водій вантажівки</h3>
           <div class="space-y-4 mb-12 italic text-lg">
-            <div class="flex items-center gap-4 text-brand-primary">
+            <div class="flex items-center gap-4 text-green-500">
               <span class="material-symbols-outlined">payments</span
               ><span class="font-bold">150 Kč / год.</span>
             </div>
@@ -471,7 +471,7 @@
             </div>
           </div>
           <button
-            data-target="modal-vacancy-4" class="w-full py-5 rounded-full border-4 border-brand-primary text-brand-primary font-headline font-bold text-xl hover:bg-brand-primary hover:text-white transition-all js-vacancy-btn">
+            data-target="modal-vacancy-4" class="w-full py-5 rounded-full border-4 border-green-500 text-green-500 font-headline font-bold text-xl hover:bg-green-500 hover:text-white transition-all js-vacancy-btn">
             Детальніше
           </button>
         </div>
@@ -704,104 +704,110 @@
           class="w-24 h-2 bg-brand-primary/20 mx-auto rounded-full"
         ></div>
       </div>
+
       <div class="space-y-6">
-        <div
-          class="bg-lavender/40 rounded-3xl p-8 border-2 border-lavender group cursor-pointer hover:bg-lavender transition-all">
-          <div class="flex justify-between items-center">
-            <h4 class="text-xl">
+        <details
+          name="faq" class="group bg-lavender/40 rounded-3xl border-2 border-lavender hover:bg-lavender transition-all">
+          <summary class="flex justify-between items-center p-8 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+            <h4 class="text-xl font-headline font-semibold text-text-main">
               Які документи потрібні для початку співпраці?
             </h4>
             <span
-              class="material-symbols-outlined text-brand-secondary group-hover:rotate-180 transition-transform"
+              class="material-symbols-outlined text-brand-secondary group-open:rotate-180 transition-transform duration-300"
               >expand_more</span>
-          </div>
+          </summary>
           <div
-            class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+            class="px-8 pb-8 text-text-light leading-relaxed">
             Для початку роботи вам знадобиться закордонний паспорт. Наша
             команда допоможе з оформленням візи, працевлаштуванням та іншими документами.
           </div>
-        </div>
-        <div
-          class="bg-warm-peach/40 rounded-3xl p-8 border-2 border-warm-peach group cursor-pointer hover:bg-warm-peach transition-all">
-          <div class="flex justify-between items-center">
+        </details>
+
+        <details
+          name="faq" class="group bg-warm-peach/40 rounded-3xl border-2 border-warm-peach group hover:bg-warm-peach transition-all">
+          <summary class="flex justify-between items-center p-8 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
             <h4 class="text-xl">Чи потрібно знати чеську мову?</h4>
             <span
-              class="material-symbols-outlined text-brand-primary group-hover:rotate-180 transition-transform"
+              class="material-symbols-outlined text-brand-primary group-open:rotate-180 transition-transform"
               >expand_more</span>
-          </div>
+          </summary>
           <div
-            class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+            class="px-8 pb-8 text-text-light leading-relaxed">
             На більшість позицій знання мови не обов'язкове. На кожному
             заводі працюють наші україномовні координатори, які допоможуть
             вам з адаптацією.
           </div>
-        </div>
-        <div
-          class="bg-mint-cream/40 rounded-3xl p-8 border-2 border-mint-cream group cursor-pointer hover:bg-mint-cream transition-all">
-          <div class="flex justify-between items-center">
+        </details>
+
+        <details
+          name="faq" class="bg-mint-cream/40 rounded-3xl border-2 border-mint-cream group hover:bg-mint-cream transition-all">
+          <summary class="flex justify-between items-center p-8 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
             <h4 class="text-xl">
               Чи будуть мені платити більше, якщо я працюю безпосередньо в компанії?
             </h4>
             <span
-              class="material-symbols-outlined text-green-600 group-hover:rotate-180 transition-transform"
+              class="material-symbols-outlined text-green-600 group-open:rotate-180 transition-transform"
               >expand_more</span>
-          </div>
+          </summary>
           <div
-            class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+            class="px-8 pb-8 text-text-light leading-relaxed">
               <span class="font-bold">Все навпаки!</span>
             Згідно закону, агенція не допускає менші виплати працівникам, ніж пропонує безпосередньо компанія-роботодавець. Тому вам гарантована така ж або вища зарплата.
             Перш за все, ми дізнаємося скільки компанія платить своїм працівникам за певну посаду і ця сума визначає вашу мінімальну гарантовану заробітну плату.
           </div>
-        </div>
-           <div
-          class="bg-lavender/40 rounded-3xl p-8 border-2 border-lavender group cursor-pointer hover:bg-lavender transition-all">
-          <div class="flex justify-between items-center">
+        </details>
+
+        <details
+          name="faq" class="bg-lavender/40 rounded-3xl border-2 border-lavender group hover:bg-lavender transition-all">
+          <summary class="flex justify-between items-center p-8 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
             <h4 class="text-xl">
               Як добиратися до місця роботи?
             </h4>
             <span
-              class="material-symbols-outlined text-brand-secondary group-hover:rotate-180 transition-transform"
+              class="material-symbols-outlined text-brand-secondary group-open:rotate-180 transition-transform"
               >expand_more</span>
-          </div>
+          </summary>
           <div
-            class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+            class="px-8 pb-8 text-text-light leading-relaxed">
             У більшості випадків працівників довозять до роботи службовим транспортом. Маршрутки або мікроавтобуси забирають людей з місця проживання та привозять безпосередньо до підприємства.
           </div>
-        </div>
-           <div
-          class="bg-warm-peach/40 rounded-3xl p-8 border-2 border-warm-peach group cursor-pointer hover:bg-warm-peach transition-all">
-          <div class="flex justify-between items-center">
+        </details>
+
+        <details
+          name="faq" class="bg-warm-peach/40 rounded-3xl border-2 border-warm-peach group hover:bg-warm-peach transition-all">
+          <summary class="flex justify-between items-center p-8 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
             <h4 class="text-xl">
               Чи допоможете мені з оформленням візи?
             </h4>
             <span
-              class="material-symbols-outlined text-brand-primary group-hover:rotate-180 transition-transform"
+              class="material-symbols-outlined text-brand-primary group-open:rotate-180 transition-transform"
               >expand_more</span>
-          </div>
+          </summary>
           <div
-            class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+            class="px-8 pb-8 text-text-light leading-relaxed">
             Так, ми повністю супроводжуємо процес оформлення візи та всіх необхідних документів.
             Ми надаємо офіційну прописку, допомагаємо з підготовкою документів, записом у візовий центр та контролюємо кожен етап подачі.
           </div>
-        </div>
-           <div
-          class="bg-mint-cream/40 rounded-3xl p-8 border-2 border-mint-cream group cursor-pointer hover:bg-mint-cream transition-all">
-          <div class="flex justify-between items-center">
+        </details>
+
+        <details
+          name="faq" class="bg-mint-cream/40 rounded-3xl border-2 border-mint-cream group hover:bg-mint-cream transition-all">
+          <summary class="flex justify-between items-center p-8 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
             <h4 class="text-xl">
               Чи вираховуєте ви комісію або плату за послуги із зарплати?
             </h4>
             <span
-              class="material-symbols-outlined text-green-600 group-hover:rotate-180 transition-transform"
+              class="material-symbols-outlined text-green-600 group-open:rotate-180 transition-transform"
               >expand_more</span>
-          </div>
+          </summary>
           <div
-            class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+            class="px-8 pb-8 text-text-light leading-relaxed">
             <span class="font-bold">Ми надаємо послуги безкоштовно.</span> Всі витрати за послуги оплачує компанія, в якій ви будете працювати.
                 Щотижня ви маєте можливість отримувати аванс.
                 Зарплата виплачується кожного наступного місяця.
                 Ви регулярно отримаєте огляд відпрацьованих годин.
           </div>
-        </div>
+        </details>
 
       </div>
     </div>

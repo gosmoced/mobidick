@@ -235,6 +235,7 @@
             >Vaše</span> komfort a bezpečnost — naše priorita.
         </p>
       </div>
+
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
         <div
           class="bg-white p-8 rounded-super-xl shadow-lg border-b-8 border-brand-secondary rotate-1 flex flex-col items-center text-center">
@@ -327,6 +328,7 @@
           </span>
         </div>
       </div>
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div
           class="group relative bg-lavender p-10 rounded-super-xl hover:bg-white transition-all duration-500 hover:shadow-2xl border-2 border-transparent hover:border-lavender">
@@ -416,7 +418,7 @@
           class="group relative bg-soft-rose p-10 rounded-super-xl hover:bg-white transition-all duration-500 hover:shadow-2xl border-2 border-transparent hover:border-soft-rose">
           <h3 class="text-3xl mb-8">Balicí elektroniky</h3>
           <div class="space-y-4 mb-12 italic text-lg">
-            <div class="flex items-center gap-4 text-brand-secondary">
+            <div class="flex items-center gap-4 text-red-500">
               <span class="material-symbols-outlined">payments</span
               ><span class="font-bold">150 Kč / hod.</span>
             </div>
@@ -432,7 +434,7 @@
             </div>
           </div>
           <button
-            data-target="modal-vacancy-3" class="w-full py-5 rounded-full border-4 border-brand-secondary text-brand-secondary font-headline font-bold text-xl hover:bg-brand-secondary hover:text-white transition-all js-vacancy-btn">
+            data-target="modal-vacancy-3" class="w-full py-5 rounded-full border-4 border-red-500 text-red-500 font-headline font-bold text-xl hover:bg-red-500 hover:text-white transition-all js-vacancy-btn">
             Více informací
           </button>
         </div>
@@ -458,7 +460,7 @@
           class="group relative bg-mint-cream p-10 rounded-super-xl hover:bg-white transition-all duration-500 hover:shadow-2xl border-2 border-transparent hover:border-mint-cream">
         <h3 class="text-3xl mb-8">Řidič kamionu</h3>
           <div class="space-y-4 mb-12 italic text-lg">
-            <div class="flex items-center gap-4 text-brand-primary">
+            <div class="flex items-center gap-4 text-green-500">
               <span class="material-symbols-outlined">payments</span
               ><span class="font-bold">150 Kč / hod.</span>
             </div>
@@ -474,7 +476,7 @@
             </div>
           </div>
           <button
-            data-target="modal-vacancy-4" class="w-full py-5 rounded-full border-4 border-brand-primary text-brand-primary font-headline font-bold text-xl hover:bg-brand-primary hover:text-white transition-all js-vacancy-btn">
+            data-target="modal-vacancy-4" class="w-full py-5 rounded-full border-4 border-green-500 text-green-500 font-headline font-bold text-xl hover:bg-green-500 hover:text-white transition-all js-vacancy-btn">
             Více informací
           </button>
         </div>
@@ -704,96 +706,102 @@
           class="w-24 h-2 bg-brand-primary/20 mx-auto rounded-full"
         ></div>
       </div>
+
       <div class="space-y-6">
-        <div
-          class="bg-lavender/40 rounded-3xl p-8 border-2 border-lavender group cursor-pointer hover:bg-lavender transition-all">
-          <div class="flex justify-between items-center">
+        <details
+          name="faq" class="bg-lavender/40 rounded-3xl border-2 border-lavender group hover:bg-lavender transition-all">
+          <summary class="flex justify-between items-center p-8 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
             <h4 class="text-xl">
               Jaké dokumenty jsou potřeba k zahájení spolupráce?
             </h4>
             <span
-              class="material-symbols-outlined text-brand-secondary group-hover:rotate-180 transition-transform"
+              class="material-symbols-outlined text-brand-secondary group-open:rotate-180 transition-transform"
               >expand_more</span>
-          </div>
+          </summary>
           <div
-            class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+            class="px-8 pb-8 text-text-light leading-relaxed">
             K zahájení práce budete potřebovat cestovní pas. Naše posádka pomůže s vyřízením víza, zaměstnáním a dalšími dokumenty.
           </div>
-        </div>
-        <div
-          class="bg-warm-peach/40 rounded-3xl p-8 border-2 border-warm-peach group cursor-pointer hover:bg-warm-peach transition-all">
-          <div class="flex justify-between items-center">
+        </details>
+
+        <details
+          name="faq" class="bg-warm-peach/40 rounded-3xl border-2 border-warm-peach group hover:bg-warm-peach transition-all">
+          <summary class="flex justify-between items-center p-8 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
             <h4 class="text-xl">Je nutné znát český jazyk?</h4>
             <span
-              class="material-symbols-outlined text-brand-primary group-hover:rotate-180 transition-transform"
+              class="material-symbols-outlined text-brand-primary group-open:rotate-180 transition-transform"
               >expand_more</span>
-          </div>
+          </summary>
           <div
-            class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+            class="px-8 pb-8 text-text-light leading-relaxed">
             Pro většinu pozic není znalost jazyka vyžadována. V každé továrně pracují naši ukrajinsky mluvící koordinátoři, kteří vám pomohou s adaptací.
           </div>
-        </div>
-        <div
-          class="bg-mint-cream/40 rounded-3xl p-8 border-2 border-mint-cream group cursor-pointer hover:bg-mint-cream transition-all">
-          <div class="flex justify-between items-center">
+        </details>
+
+        <details
+          name="faq" class="bg-mint-cream/40 rounded-3xl border-2 border-mint-cream group hover:bg-mint-cream transition-all">
+          <summary class="flex justify-between items-center p-8 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
             <h4 class="text-xl">
               Budu placen více, pokud pracuji přímo ve společnosti?
             </h4>
             <span
-              class="material-symbols-outlined text-green-600 group-hover:rotate-180 transition-transform"
+              class="material-symbols-outlined text-green-600 group-open:rotate-180 transition-transform"
               >expand_more</span>
-          </div>
+          </summary>
           <div
-            class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+            class="px-8 pb-8 text-text-light leading-relaxed">
               <span class="font-bold">Právě naopak!</span>
             Podle zákona agentura neumožňuje nižší platby zaměstnancům, než nabízí přímo zaměstnavatel. Proto je Vám zaručen stejný nebo vyšší plat. Nejprve zjistíme, kolik společnost platí svým zaměstnancům za určitou pozici, a tato částka určuje váš minimální zaručený plat.
           </div>
-        </div>
-           <div
-          class="bg-lavender/40 rounded-3xl p-8 border-2 border-lavender group cursor-pointer hover:bg-lavender transition-all">
-          <div class="flex justify-between items-center">
+        </details>
+
+        <details
+          name="faq" class="bg-lavender/40 rounded-3xl border-2 border-lavender group hover:bg-lavender transition-all">
+          <summary class="flex justify-between items-center p-8 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
             <h4 class="text-xl">
               Jak se dostat na pracoviště?
             </h4>
             <span
-              class="material-symbols-outlined text-brand-secondary group-hover:rotate-180 transition-transform"
+              class="material-symbols-outlined text-brand-secondary group-open:rotate-180 transition-transform"
               >expand_more</span>
-          </div>
+          </summary>
           <div
-            class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+            class="px-8 pb-8 text-text-light leading-relaxed">
             Ve většině případů jsou zaměstnanci dopravováni do práce firemním vozidlem. Mikrobusy nebo dodávky vyzvedávají lidi z jejich bydliště a přivážejí je přímo k podniku.
           </div>
-        </div>
-           <div
-          class="bg-warm-peach/40 rounded-3xl p-8 border-2 border-warm-peach group cursor-pointer hover:bg-warm-peach transition-all">
-          <div class="flex justify-between items-center">
+        </details>
+
+        <details
+          name="faq" class="bg-warm-peach/40 rounded-3xl border-2 border-warm-peach group hover:bg-warm-peach transition-all">
+          <summary class="flex justify-between items-center p-8 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
             <h4 class="text-xl">
               Pomůžete mi s vyřízením víza?
             </h4>
             <span
-              class="material-symbols-outlined text-brand-primary group-hover:rotate-180 transition-transform"
+              class="material-symbols-outlined text-brand-primary group-open:rotate-180 transition-transform"
               >expand_more</span>
-          </div>
+          </summary>
           <div
-            class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+            class="px-8 pb-8 text-text-light leading-relaxed">
             Ano, plně podporujeme proces vyřízení víza a všech potřebných dokumentů. Poskytujeme oficiální registraci, pomáháme s přípravou dokumentů, rezervací do vízového centra a sledujeme každou fázi podání.
           </div>
-        </div>
-           <div
-          class="bg-mint-cream/40 rounded-3xl p-8 border-2 border-mint-cream group cursor-pointer hover:bg-mint-cream transition-all">
-          <div class="flex justify-between items-center">
+        </details>
+
+        <details
+          name="faq" class="bg-mint-cream/40 rounded-3xl border-2 border-mint-cream group hover:bg-mint-cream transition-all">
+          <summary class="flex justify-between items-center p-8 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
             <h4 class="text-xl">
               Odečítáte si provizi nebo poplatek za služby ze mzdy?
             </h4>
             <span
-              class="material-symbols-outlined text-green-600 group-hover:rotate-180 transition-transform"
+              class="material-symbols-outlined text-green-600 group-open:rotate-180 transition-transform"
               >expand_more</span>
-          </div>
+          </summary>
           <div
-            class="mt-6 text-text-light leading-relaxed hidden group-hover:block">
+            class="px-8 pb-8 text-text-light leading-relaxed">
             <span class="font-bold">Naše služby poskytujeme zdarma.</span> Všechny náklady na služby hradí společnost, ve které budete pracovat. Každý týden máte možnost získat zálohu. Plat se vyplácí každý následující měsíc. Pravidelně obdržíte přehled odpracovaných hodin.
           </div>
-        </div>
+        </details>
 
       </div>
     </div>
